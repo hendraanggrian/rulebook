@@ -5,8 +5,8 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/openjdk:8.0
       - image: cimg/python:3.10
+      - image: cimg/openjdk:8.0
     steps:
       - checkout
       - run: gradle build koverXmlReport
